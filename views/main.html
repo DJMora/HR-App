@@ -1,0 +1,15 @@
+<section id="employees" ng-init="getAllEmployees()">
+  <h3>Employee List</h3>
+  <table class="table table-striped">
+    <thead>
+      <th>Name</th>
+      <th>Position</th>
+    </thead>
+    <tbody>
+      <tr ng-repeat="employee in employees">
+        <td>{{employee.name}}</td>
+        <td>{{employee.position}}</td>
+      </tr>
+    </tbody>
+  </table>
+</section>

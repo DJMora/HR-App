@@ -1,0 +1,19 @@
+<section id="update-employees">
+    <form name="frm-search" id="frm-search">
+          <input type="search" id="txt-search" name="txt-search" class="form-control" placeholder="Search by name" required ng-model="name"/>
+          <input type="search" id="btn-search" name="btn-search" class="btn btn-primary" value="Search Employee" ng-click="getEmployee()"/>
+    </form>
+    <table class="table table-striped">
+      <thead>
+        <th>Name</th>
+        <th>Position</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td><p contenteditable="true" id="employee">{{employee}}</p></td>
+          <td><p contenteditable="true" id="position">{{position}}</p></td>
+          <td ng-hide="viewButton"><input type="search" id="btn-update" name="btn-update" class="btn btn-primary" value="Update" ng-click="updateEmployee()"/></td>
+        </tr>
+      </tbody>
+    </table>
+</section>
